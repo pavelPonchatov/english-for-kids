@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English for kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="shortcut icon" href="./src/assets/img/star.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay--hide"></div>
+    <header class="header">
+        <div class="burger-menu">
+            <span class="burger__line "></span>
+        </div>
+        <ul class="menu">
+            <li class="menu__item" id="mainPage" data-menu-item="item">Main Page</li>
+            <li class="menu__item" id="actionA" data-menu-item="item">Action (set A)</li>
+            <li class="menu__item" id="actionB" data-menu-item="item">Action (set B)</li>
+            <li class="menu__item" id="actionC" data-menu-item="item">Action (set C)</li>
+            <li class="menu__item" id="adjective" data-menu-item="item">Adjective</li>
+            <li class="menu__item" id="animalA" data-menu-item="item">Animal (set A)</li>
+            <li class="menu__item" id="animalB" data-menu-item="item">Animal (set B)</li>
+            <li class="menu__item" id="clothes" data-menu-item="item">Clothes</li>
+            <li class="menu__item" id="emotion" data-menu-item="item">Emotion</li>
+        </ul>
+        <div class="switch-btn">
+            <label for="label-checkbox" class="switch">
+                <input type="checkbox" class="switch__input" checked id="label-checkbox">
+                <span class="switch__label" data-on="Train" data-off="Play"> </span>
+                <span class="switch__handle"></span>
+            </label>
+        </div>
+    </header>
+
+    <div class="score">
+        
+    </div>
+
+    <main class="main ">
+        <div class="main__card" id="actionA">
+            <img src="./src/assets/img/dance.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Action (set A)</h4>
+        </div>
+
+        <div class="main__card" id="actionB">
+            <img src="./src/assets/img/swim.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Action (set B)</h4>
+        </div>
+
+        <div class="main__card" id="actionC">
+            <img src="./src/assets/img/play.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Action (set C)</h4>
+        </div>
+
+        <div class="main__card" id="adjective">
+            <img src="./src/assets/img/scared.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Adjective</h4>
+        </div>
+
+        <div class="main__card" id="animalA">
+            <img src="./src/assets/img/cat.jpg"   alt="" class="card__img">
+            <h4 class="card__text">Animal (set A)</h4>
+        </div>
+
+        <div class="main__card" id="animalB">
+            <img src="./src/assets/img/bird.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Animal (set B)</h4>
+        </div>
+
+        <div class="main__card" id="clothes">
+            <img src="./src/assets/img/blouse.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Clothes</h4>
+        </div>
+
+        <div class="main__card" id="emotion">
+            <img src="./src/assets/img/smile.jpg"  alt="" class="card__img">
+            <h4 class="card__text">Emotion</h4>
+        </div>
+
+
+    </main>
+    <audio src="" class="card__audio--train"></audio>
+    <audio src="" class="card__audio--play"></audio>
+    <audio src="" class="error__audio"></audio>
+    <audio src="" class="success__audio"></audio>
+    <audio src="" class="finish-win__audio"></audio>
+    <audio src="" class="finish-lose__audio"></audio>
+
+
+    <template id="train-card--template"> 
+        <div class="train__card">
+            <div class="train__front" >
+                <img src="" alt="" class="train__img">
+                <h4 class="train__text"></h4>
+            </div>
+
+            <div class="train__back">
+                <img src="" alt="" class="train__img">
+                <h4 class="train__text"></h4>
+            </div>
+
+            <button class="reverse-btn"></button>
+        </div>
+
+        <div class="play__card">
+            <img src="" alt="" class="play__img">
+        </div>
+
+        <button class="start-game">Start-game</button>
+    </template>
+    <script src="dist/script.js"></script>
+</body>
+</html>
